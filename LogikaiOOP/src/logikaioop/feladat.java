@@ -2,10 +2,10 @@ package logikaioop;
 
 import java.util.Scanner;
 
-public class Bekeres {
+public class feladat {
 Scanner scr=new Scanner(System.in);
 
-    public Bekeres() {
+    public feladat() {
     }
     public String valasz(){
         String valasz=scr.next("Melyik:");
