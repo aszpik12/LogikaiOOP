@@ -9,10 +9,13 @@ public class LogikaiOOP {
 
   
     public static void main(String[] args) {
+        Leiras leiras1 = new Leiras("Az 1 állitás");
+         Leiras leiras2 = new Leiras("Az 2 állitás");
+          Leiras leiras3 = new Leiras("Az 3 állitás");
       System.out.println("Leírás");
-        System.out.println("Az 1. állítás!");
-        System.out.println("Az 2. állítás!");
-        System.out.println("Az 3. állítás!");
+        System.out.println(leiras1.toString());
+        System.out.println(leiras2.toString());
+        System.out.println(leiras3.toString());
         System.out.println("Melyik:");
         System.out.println("A válasz jó | rossz");
     }
