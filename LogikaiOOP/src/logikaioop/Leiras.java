@@ -4,28 +4,29 @@
  */
 package logikaioop;
 
+import java.util.ArrayList;
 import java.util.Objects;
 
 
 class Leiras {
-    private String valasz;
+      private ArrayList<String> leiras;
 
-    public Leiras(String valasz) {
-        this.valasz = valasz;
+    public Leiras(ArrayList<String> leiras) {
+        this.leiras = leiras;
     }
 
-    public String getValasz() {
-        return valasz;
+    public ArrayList<String> getLeiras() {
+        return leiras;
     }
 
-    public void setValasz(String valasz) {
-        this.valasz = valasz;
+    public void setLeiras(ArrayList<String> leiras) {
+        this.leiras = leiras;
     }
 
     @Override
     public int hashCode() {
-        int hash = 5;
-        hash = 97 * hash + Objects.hashCode(this.valasz);
+        int hash = 3;
+        hash = 53 * hash + Objects.hashCode(this.leiras);
         return hash;
     }
 
@@ -41,12 +42,9 @@ class Leiras {
             return false;
         }
         final Leiras other = (Leiras) obj;
-        return Objects.equals(this.valasz, other.valasz);
+        return Objects.equals(this.leiras, other.leiras);
     }
 
-    @Override
-    public String toString() {
-        return "Leiras{" + "valasz=" + valasz + '}';
-    }
+    
     
 }
