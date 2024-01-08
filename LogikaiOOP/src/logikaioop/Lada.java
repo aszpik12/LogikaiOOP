@@ -2,14 +2,14 @@
 package logikaioop;
 
 
-public class Logikai {
+public class Lada {
     String allitas1;
     String allitas2;
     String allitas3;
     int valasztott;
     String valasz;
 
-    public Logikai(String allitas1, String allitas2, String allitas3, int valasztott, String valasz) {
+    public Lada(String allitas1, String allitas2, String allitas3, int valasztott, String valasz) {
         this.allitas1 = allitas1;
         this.allitas2 = allitas2;
         this.allitas3 = allitas3;
@@ -60,6 +60,6 @@ public class Logikai {
     public String toString() {
         return "Logikai{" + "allitas1=" + allitas1 + ", allitas2=" + allitas2 + ", allitas3=" + allitas3 + ", valasztott=" + valasztott + ", valasz=" + valasz + '}';
     }
-     
+    
     
 }
