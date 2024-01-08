@@ -1,15 +1,12 @@
-
 package logikaioop;
-
 
 public class Lada {
     String allitas,anyag;
     boolean kincs;
-
+    
     /*public Lada() {
         this("","",true);
     }*/
-    
     public Lada(String allitas, String anyag, boolean kincs) {
         setAllitas(allitas);
         setAnyag(anyag);
@@ -43,7 +40,8 @@ public class Lada {
     public String toString() {
         return "Lada{" + "allitas=" + allitas + ", anyag=" + anyag + ", kincs=" + kincs + '}';
     }
-    
-    
+    public void valasz(){
+        
+    }
     
 }
