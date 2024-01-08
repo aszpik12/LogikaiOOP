@@ -3,63 +3,46 @@ package logikaioop;
 
 
 public class Lada {
-    String allitas1;
-    String allitas2;
-    String allitas3;
-    int valasztott;
-    String valasz;
+    String allitas,anyag;
+    boolean kincs;
 
-    public Lada(String allitas1, String allitas2, String allitas3, int valasztott, String valasz) {
-        this.allitas1 = allitas1;
-        this.allitas2 = allitas2;
-        this.allitas3 = allitas3;
-        this.valasztott = valasztott;
-        this.valasz = valasz;
+    public Lada(String allitas, String anyag, boolean kincs) {
+        this.allitas = allitas;
+        this.anyag = anyag;
+        this.kincs = kincs;
     }
-    public String getAllitas1() {
-        return allitas1;
+    public void kstr(){
+        
+    }
+    public String getAllitas() {
+        return allitas;
     }
 
-    public void setAllitas1(String allitas1) {
-        this.allitas1 = allitas1;
+    public void setAllitas(String allitas) {
+        this.allitas = allitas;
     }
 
-    public String getAllitas2() {
-        return allitas2;
+    public String getAnyag() {
+        return anyag;
     }
 
-    public void setAllitas2(String allitas2) {
-        this.allitas2 = allitas2;
+    public void setAnyag(String anyag) {
+        this.anyag = anyag;
     }
 
-    public String getAllitas3() {
-        return allitas3;
+    public boolean isKincs() {
+        return kincs;
     }
 
-    public void setAllitas3(String allitas3) {
-        this.allitas3 = allitas3;
-    }
-
-    public int getValasztott() {
-        return valasztott;
-    }
-
-    public void setValasztott(int valasztott) {
-        this.valasztott = valasztott;
-    }
-
-    public String getValasz() {
-        return valasz;
-    }
-
-    public void setValasz(String valasz) {
-        this.valasz = valasz;
+    public void setKincs(boolean kincs) {
+        this.kincs = kincs;
     }
 
     @Override
     public String toString() {
-        return "Logikai{" + "allitas1=" + allitas1 + ", allitas2=" + allitas2 + ", allitas3=" + allitas3 + ", valasztott=" + valasztott + ", valasz=" + valasz + '}';
+        return "Lada{" + "allitas=" + allitas + ", anyag=" + anyag + ", kincs=" + kincs + '}';
     }
+    
     
     
 }
