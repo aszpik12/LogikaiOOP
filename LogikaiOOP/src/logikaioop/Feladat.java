@@ -2,13 +2,13 @@ package logikaioop;
 
 import java.util.ArrayList;
 
-public class Ladak {
+public class Feladat {
     Lada lad1 = new Lada("veszélyes", "fa", true);
     Lada lad2 = new Lada("biztonságos", "vas", true);
     Lada lad3 = new Lada("ismeretlen", "gyémánt", false);
     ArrayList<Lada> ladak = new ArrayList<Lada>();
 
-    public Ladak() {
+    public Feladat() {
         ladak.add(lad1);
         ladak.add(lad2);
         ladak.add(lad3);

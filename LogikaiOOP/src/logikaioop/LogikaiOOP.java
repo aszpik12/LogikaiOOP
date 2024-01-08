@@ -11,7 +11,7 @@ public class LogikaiOOP {
         System.out.println("Melyik:");
         System.out.println("A válasz jó | rossz");
         
-        Ladak lada = new Ladak();
+        Feladat lada = new Feladat();
         lada.leiras();
     }
     
