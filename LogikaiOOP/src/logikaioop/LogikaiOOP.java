@@ -9,11 +9,9 @@ public class LogikaiOOP {
 
   
     public static void main(String[] args) {
-        Leiras leiras1 = new Leiras("Az 1 állitás");
-         Leiras leiras2 = new Leiras("Az 2 állitás");
-          Leiras leiras3 = new Leiras("Az 3 állitás");
-      System.out.println("Leírás");
-        System.out.println(leiras1.toString());
+        Lada lada = new Lada("Van benne 3 pénz", "pénz", true);
+      System.out.println(lada.getAllitas());
+        System.out.println("");
         System.out.println(leiras2.toString());
         System.out.println(leiras3.toString());
         System.out.println("Melyik:");
