@@ -12,6 +12,7 @@ public class Lada {
         setAnyag(anyag);
         setKincs(kincs);
     }
+    
     public String getAllitas() {
         return allitas;
     }
