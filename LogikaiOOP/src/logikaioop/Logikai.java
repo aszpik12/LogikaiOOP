@@ -2,7 +2,7 @@
 package logikaioop;
     
 public class Logikai {
-    
+
     String opcio1;
     String opcio2;
     String opcio3;
