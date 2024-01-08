@@ -10,6 +10,9 @@ public class LogikaiOOP {
         System.out.println("Leírás");
         System.out.println("Melyik:");
         System.out.println("A válasz jó | rossz");
+        
+        Ladak lada = new Ladak();
+        lada.leiras();
     }
     
 }
