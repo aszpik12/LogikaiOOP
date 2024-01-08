@@ -1,27 +1,18 @@
 
 package logikaioop;
 
-
 public class Lada {
-    private String allitas, anyag;
-    private boolean kincs;
+    String allitas, anyag;
+    boolean kincs;
 
     public Lada(String allitas, String anyag, boolean kincs) {
         this.allitas = allitas;
         this.anyag = anyag;
         this.kincs = kincs;
     }
-    public Lada(String allitas, String anyag){
-        this.allitas = allitas;
-        this.anyag = anyag;
-        this.kincs = true;
-        
-    }
-    public Lada(boolean kincs){
-        this.allitas = "pénz";
-        this.anyag = "réz";
-        this.kincs = true;
-        
+
+    public void kstr() {
+
     }
 
     public String getAllitas() {
@@ -36,7 +27,7 @@ public class Lada {
         return anyag;
     }
 
-    public void setAnyag(String allany) {
+    public void setAnyag(String anyag) {
         this.anyag = anyag;
     }
 
@@ -50,7 +41,7 @@ public class Lada {
 
     @Override
     public String toString() {
-        return "Lada{" + "allitas=" + allitas + ", allany=" + anyag + ", kincs=" + kincs + '}';
+        return "Lada{" + "allitas=" + allitas + ", anyag=" + anyag + ", kincs=" + kincs + '}';
     }
-    
+
 }
