@@ -6,13 +6,14 @@ public class Lada {
     String allitas,anyag;
     boolean kincs;
 
+    /*public Lada() {
+        this("","",true);
+    }*/
+    
     public Lada(String allitas, String anyag, boolean kincs) {
-        this.allitas = allitas;
-        this.anyag = anyag;
-        this.kincs = kincs;
-    }
-    public void kstr(){
-        
+        setAllitas(allitas);
+        setAnyag(anyag);
+        setKincs(kincs);
     }
     public String getAllitas() {
         return allitas;
