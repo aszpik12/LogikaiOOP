@@ -9,10 +9,6 @@ public class LogikaiOOP {
 
   
     public static void main(String[] args) {
-        run();
+        feladat fel1=new feladat();
     }
-    public static void run(){
-        
-    }
-    
 }

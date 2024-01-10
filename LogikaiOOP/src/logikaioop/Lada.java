@@ -29,7 +29,7 @@ public class Lada {
         this.anyag = anyag;
     }
 
-    public boolean isKincs() {
+    public boolean getKincs() {
         return kincs;
     }
 
