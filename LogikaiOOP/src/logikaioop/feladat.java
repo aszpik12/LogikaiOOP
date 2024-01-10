@@ -21,7 +21,7 @@ ArrayList<Lada> ladak = new ArrayList<Lada>();
         return valasz;
     }
     private void isHelyes(){
-        System.out.println("mondja meg melyik jo(1-3):");
+        System.out.print("mondja meg melyik jo(1-3):");
         int valasz=valasz();
         if(ladak.get(valasz-1).getKincs() == true){
             System.out.println("A válasz jó");
@@ -31,9 +31,9 @@ ArrayList<Lada> ladak = new ArrayList<Lada>();
         }
     }
         public void leiras(){
-        System.out.println("Leírás:");
+        System.out.println("Leírás: Minden láda 1-1 állitást tartalmaz, csak az egyik igaz Melyikben van a kincs");
         for (Lada lada : ladak) {
-            System.out.println(lada.anyag);
+            System.out.print(lada.anyag + "láda: ");
             System.out.println(lada.allitas);
         }
         isHelyes();
