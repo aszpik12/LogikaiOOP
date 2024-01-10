@@ -23,7 +23,7 @@ public class Lada {
         return anyag;
     }
 
-    public boolean isKincs() {
+    public boolean getKincs() {
         return kincs;
     }
 

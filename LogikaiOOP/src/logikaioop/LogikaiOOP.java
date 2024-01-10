@@ -13,22 +13,9 @@ public class LogikaiOOP {
         }
 
     private static void run() {
-       System.out.println("Leírás");
-                System.out.println("Az 1. állítás!");
-                System.out.println("Az 2. állítás!");
-                System.out.println("Az 3. állítás!");
-                System.out.println("Melyik:");
-                int valasz = src.nextInt();
-                Valasz(valasz);
+       Feladat fel1=new Feladat();
+                
     }
-    private static void Valasz(int valasz){
-        if(valasz == 1){
-            System.out.println("A válasz jó");
-        }
-        else{
-            System.out.println("A válasz rosz");
-        }
-        
-    }
+    
 
 }
