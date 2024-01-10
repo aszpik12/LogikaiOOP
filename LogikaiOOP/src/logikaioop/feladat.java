@@ -33,6 +33,7 @@ ArrayList<Lada> ladak = new ArrayList<Lada>();
         public void leiras(){
         System.out.println("Leírás:");
         for (Lada lada : ladak) {
+            System.out.println(lada.anyag);
             System.out.println(lada.allitas);
         }
         isHelyes();
