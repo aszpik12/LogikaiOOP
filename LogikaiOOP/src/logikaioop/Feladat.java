@@ -31,7 +31,8 @@ ArrayList<Lada> ladak = new ArrayList<Lada>();
         }
     }
         public void leiras(){
-        System.out.println("Leírás:");
+        System.out.println("Leírás: minden láda 1-1 állítást tartalmaz, csak az egyik igaz");
+        System.out.println("Melyikben van a kincs?");
         for (Lada lada : ladak) {
             System.out.println(lada.anyag +" "+ lada.allitas);
         }
