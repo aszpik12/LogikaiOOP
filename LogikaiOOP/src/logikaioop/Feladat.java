@@ -28,8 +28,13 @@ public class Feladat {
         }
     }
 
-    public String valasz(){
-        String valasz=scr.next("Melyik:");
-        return valasz;
+    public void valasz(){
+        System.out.println("Melyik:");
+        int valasz=scr.nextInt();
+        if(valasz==3){
+            System.out.println("A válasz jó");
+        }else{
+            System.out.println("A válasz rossz");
+        }
     }
 }
