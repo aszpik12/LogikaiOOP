@@ -24,9 +24,9 @@ public class Felugro_ablak {
             JOptionPane.showInternalMessageDialog(null,egy,null,JOptionPane.INFORMATION_MESSAGE);
         }
     }
-    public int bekeres(){
-       Object[] megoldasok={1,2,3};
-       int elso=(int) JOptionPane.showInputDialog(null, this, "Valasz", JOptionPane.INFORMATION_MESSAGE, null, megoldasok, megoldasok);
+    public String bekeres(){
+       Object[] megoldasok={"arany","ezüst","bronz"};
+       String elso=(String) JOptionPane.showInputDialog(null, "adja meg melyik lada helyes", "Valasz", JOptionPane.DEFAULT_OPTION, null, megoldasok, megoldasok);
        return elso;
     }
     public void helyesvalasz(){

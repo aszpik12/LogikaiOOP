@@ -18,7 +18,7 @@ ArrayList<Lada> ladak = new ArrayList<Lada>();
         //leiras();
         Felugro_ablak ablak=new Felugro_ablak(ladak);
         ablak.leiras();
-        if (ablak.bekeres()==2){
+        if (ablak.bekeres()=="ezust"){
         ablak.helyesvalasz();
         }
         else {
