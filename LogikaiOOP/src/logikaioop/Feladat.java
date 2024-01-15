@@ -19,11 +19,22 @@ public class Feladat {
         return "Ladak{" + "lad1=" + lad1 + ", lad2=" + lad2 + ", lad3=" + lad3 + ", ladak=" + ladak + '}';
     }
     
-    public void leiras(){
+     private void isHelyes(){
+        System.out.println("mondja meg melyik jo(1-3):");
+        int valasz=valasz();
+        if(ladak.get(valasz-1).getKincs() == true){
+            System.out.println("A válasz jó");
+        }
+        else{
+            System.out.println("A válasz rosz");
+        }
+    }
+        public void leiras(){
         System.out.println("Leírás:");
         for (Lada lada : ladak) {
-            System.out.println(lada.allitas);
+            System.out.println(lada.anyag +" "+ lada.allitas);
         }
+        isHelyes();
     }
 
 }
