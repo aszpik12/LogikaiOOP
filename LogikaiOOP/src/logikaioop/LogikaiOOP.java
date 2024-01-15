@@ -1,6 +1,7 @@
 
 package logikaioop;
 
+import model.Feladat;
 import java.util.Scanner;
 
 public class LogikaiOOP {
