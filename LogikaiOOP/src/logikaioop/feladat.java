@@ -2,6 +2,7 @@ package logikaioop;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import view.Felugro_ablak;
 
 public class feladat {
 Scanner scr=new Scanner(System.in);
@@ -14,7 +15,15 @@ ArrayList<Lada> ladak = new ArrayList<Lada>();
         ladak.add(lad1);
         ladak.add(lad2);
         ladak.add(lad3);
-        leiras();
+        //leiras();
+        Felugro_ablak ablak=new Felugro_ablak(ladak);
+        ablak.leiras();
+        if (ablak.bekeres()==2){
+        ablak.helyesvalasz();
+        }
+        else {
+        ablak.helytelenvalasz();
+        }
     }
     public int valasz(){
         int valasz=scr.nextInt();
