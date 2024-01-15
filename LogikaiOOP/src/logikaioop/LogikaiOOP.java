@@ -6,16 +6,15 @@ import java.util.Scanner;
 
 public class LogikaiOOP {
 
-        public static Scanner src = new Scanner(System.in);
-
-        public static void main(String[] args) {
-                run();
-                
-        }
-
-    private static void run() {
-       Feladat fel1=new Feladat();
-                
+  
+    public static void main(String[] args) {
+        Lada lad = new Lada("gyors", "vas", true);
+        System.out.println("Leírás");
+        System.out.println("Melyik:");
+        System.out.println("A válasz jó | rossz");
+        
+        Feladat lada = new Feladat();
+        lada.leiras();
     }
     
 

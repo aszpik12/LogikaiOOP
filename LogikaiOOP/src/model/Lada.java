@@ -1,4 +1,4 @@
-package model;
+package logikaioop;
 
 public class Lada {
     String allitas, anyag;
