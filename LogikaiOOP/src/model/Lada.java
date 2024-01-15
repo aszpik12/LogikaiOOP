@@ -27,12 +27,8 @@ public class Lada {
         return kincs;
     }
 
-    public void setAllitas(String allitas) {
-        this.allitas = allitas;
-    }
-
-    public void setAnyag(String anyag) {
-        this.anyag = anyag;
+    public boolean getKincs() {
+        return kincs;
     }
 
     public void setKincs(boolean kincs) {
