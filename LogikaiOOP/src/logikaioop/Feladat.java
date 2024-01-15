@@ -1,12 +1,14 @@
 package logikaioop;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Feladat {
     Lada lad1 = new Lada("veszélyes", "fa", true);
     Lada lad2 = new Lada("biztonságos", "vas", true);
     Lada lad3 = new Lada("ismeretlen", "gyémánt", false);
     ArrayList<Lada> ladak = new ArrayList<Lada>();
+    Scanner scr = new Scanner(System.in);
 
     public Feladat() {
         ladak.add(lad1);
@@ -19,22 +21,25 @@ public class Feladat {
         return "Ladak{" + "lad1=" + lad1 + ", lad2=" + lad2 + ", lad3=" + lad3 + ", ladak=" + ladak + '}';
     }
     
-     private void isHelyes(){
-        System.out.println("mondja meg melyik jo(1-3):");
-        int valasz=valasz();
-        if(ladak.get(valasz-1).getKincs() == true){
-            System.out.println("A válasz jó");
-        }
-        else{
-            System.out.println("A válasz rosz");
-        }
+        public int valasz(){
+        int valasz=scr.nextInt();
+        return valasz;
     }
+    
         public void leiras(){
         System.out.println("Leírás:");
         for (Lada lada : ladak) {
             System.out.println(lada.anyag +" "+ lada.allitas);
         }
-        isHelyes();
+        System.out.println("mondja meg melyik jo(1-3):");
     }
+        
+        public void jovalasz(){
+            System.out.println("A válasz jó");  
+        }
+        
+        public void rosszvalasz(){
+            System.out.println("A válasz rossz"); 
+        }
 
 }
