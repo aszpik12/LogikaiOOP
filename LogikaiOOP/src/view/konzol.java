@@ -7,6 +7,7 @@ import logikaioop.Lada;
 public class konzol {
     String kerdes;
     String valasz;
+    int valasztott;
     Scanner scr = new Scanner(System.in);
 
     public konzol(String kerdes, String valasz) {
@@ -30,8 +31,13 @@ public class konzol {
         this.valasz = valasz;
     }
 
+    public int getValasztott() {
+        return valasztott;
+    }
+
     public int valasz(){
         int valasz=scr.nextInt();
+        valasztott = valasz;
         return valasz;
     }
     
@@ -41,6 +47,7 @@ public class konzol {
             System.out.println(lada.getAnyag() +" "+ lada.getAllitas());
         }
         System.out.println("mondja meg melyik jo(1-3):");
+        valasz();
     }
         
         public void jovalasz(){
